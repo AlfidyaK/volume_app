@@ -42,7 +42,7 @@ class _KubusScreenState extends State<KubusScreen> {
       appBar: AppBar(
         title: const Text('Kubus',
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-        backgroundColor: const Color(0xFF1A73E8),
+        backgroundColor: const Color.fromARGB(255, 232, 26, 129),
         iconTheme: const IconThemeData(color: Colors.white),
         elevation: 4,
       ),
@@ -55,9 +55,9 @@ class _KubusScreenState extends State<KubusScreen> {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.blue.shade50,
+                color: const Color.fromARGB(255, 243, 206, 221),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.blue.shade200),
+                border: Border.all(color: const Color.fromARGB(255, 249, 179, 209)),
               ),
               child: Row(
                 children: [
@@ -66,10 +66,10 @@ class _KubusScreenState extends State<KubusScreen> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: const Color(0xFF1A73E8), width: 2),
+                      border: Border.all(color: const Color.fromARGB(255, 232, 26, 129), width: 2),
                     ),
                     child: const Icon(Icons.crop_square_rounded,
-                        size: 36, color: Color(0xFF1A73E8)),
+                        size: 36, color: Color.fromARGB(255, 232, 26, 129)),
                   ),
                   const SizedBox(width: 16),
                   const Expanded(
@@ -104,7 +104,7 @@ class _KubusScreenState extends State<KubusScreen> {
                     icon: const Icon(Icons.calculate, color: Colors.white),
                     label: const Text('Hitung', style: TextStyle(color: Colors.white)),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF1A73E8),
+                      backgroundColor: const Color.fromARGB(255, 232, 26, 129),
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12)),
@@ -129,8 +129,8 @@ class _KubusScreenState extends State<KubusScreen> {
             ResultCard(
               result: _result,
               formula: 'V = s³',
-              gradientStart: const Color(0xFF1A73E8),
-              gradientEnd: const Color(0xFF0D47A1),
+              gradientStart: const Color.fromARGB(255, 232, 26, 129),
+              gradientEnd: const Color.fromARGB(255, 161, 13, 109),
             ),
           ],
         ),

@@ -70,12 +70,12 @@ class HomeScreen extends StatelessWidget {
 
               ShapeCard(
                 title: 'Kubus',
-                subtitle: 'Hitung volume kubus\ndengan memasukkan panjang sisi',
+                subtitle: 'Hitung volume kubus dengan memasukkan panjang sisi',
                 formula: 'V = s³',
                 icon: Icons.crop_square_rounded,
-                color: const Color(0xFF1A73E8),
-                bgColor: const Color(0xFFE8F0FE),
-                borderColor: const Color(0xFFB3C8F9),
+                color: const Color.fromARGB(255, 232, 26, 129),
+                bgColor: const Color.fromARGB(255, 243, 206, 221),
+                borderColor: const Color.fromARGB(255, 249, 179, 209),
                 isCircle: false,
                 onTap: () => Navigator.push(context,
                     MaterialPageRoute(builder: (_) => const KubusScreen())),
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
 
               ShapeCard(
                 title: 'Tabung',
-                subtitle: 'Hitung volume tabung\ndengan jari-jari dan tinggi',
+                subtitle: 'Hitung volume tabung dengan jari-jari dan tinggi',
                 formula: 'V = π × r² × t',
                 icon: Icons.propane_tank_rounded,
                 color: const Color(0xFF34A853),
@@ -100,7 +100,7 @@ class HomeScreen extends StatelessWidget {
 
               ShapeCard(
                 title: 'Bola',
-                subtitle: 'Hitung volume bola\ndengan memasukkan jari-jari',
+                subtitle: 'Hitung volume bola dengan memasukkan jari-jari',
                 formula: 'V = (4/3) × π × r³',
                 icon: Icons.circle_rounded,
                 color: const Color(0xFFF29900),
